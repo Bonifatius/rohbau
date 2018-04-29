@@ -16,4 +16,6 @@ layout: base
 
 {% include post/pagination.html %}
 
-{% include post/related_posts.html %}
+{% if site.show_related_posts %}
+  {% include post/related_posts.html %}
+{% endif %}
